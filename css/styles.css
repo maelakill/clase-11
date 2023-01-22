@@ -32,7 +32,7 @@
 /*ejemplos de flex-direction row, para que funcione cualquier codigo de flex tengo que anunciar: display-flex, sino no funciona*/
 header{
     /*este position: fixed es para que jamas se mueva de lugar el elemento al cual le estoy indicando esto*/
-   /position: fixed;
+   position: fixed;
     top: 0;
     background-color: aquamarine;
     width: 100%;
@@ -595,9 +595,10 @@ animation-name: un_efecto;
  /*en cuanto tiempo quiero que empice*/
  animation-delay: 5s;
  }
- @keyframes un_efecto{
+ @keyframes un_efecto
+ {
     0%
-    width: 100px;
+      {width: 100px;}
     10%
     {width: 50px;}
 
