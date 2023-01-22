@@ -1,0 +1,74 @@
+comandos: 
+1. git init: este sirver para empezar a 
+trabajar con GIT. se realiza una sola vez, 
+al comenzar a trabajar
+
+2.git status: me indica en que estado se encuentra
+mi repositorio o carpeta que inicie con GIT 
+
+3.(git add . ): sirve para sumar al repositorio 
+los archivos que no estan introducidos aun.
+
+4. git status: para ver si incorporo o sumo 
+los archivos que faltaban
+
+5.git commit -m "mensaje": esto sirve para confirmar lo que hice en mis archivos, lo subira al repositorio. 
+
+6. git log: esto sirve para ver que ha pasado en nuestro repositorio/proyecto
+
+7. .gitignore (investigar) esto sirve para ignorar algun archivo que no queramos subir al repositorio.
+
+8.git log --oneline: esto es lo mismo que git log, 
+la diferencia radica en que uno manda el comando en varias lineas y 
+el otro en una sola,
+ lo cual se hace mas facil poder leerlo. es mas practico.
+
+ RAMAS: 
+ es una version aparte de la original, 
+ puedo modificar, solucionar errores, probar, eliminar. 
+
+9. git branch:
+primero pongo el comnado git branch para confirmar cuantas ramas estoy utilizando, 
+luego le hago un git status. luego vuelvo a colocar git branch pero en esta ocasion 
+le voy a sumar el nombre que le voy a dar a mi nueva rama.
+ej: git branch rama_nueva 
+ej: git branch rama-nueva 
+siempre el nombre tiene que tener un guion bajo o medio, no puede haber espacios. 
+luego de este paso vuelvo a colocar git branch para que me diga que ramas hay. 
+ahi van a saltar las dos, la master que es la principal y la nueva que adheri 
+pero en color blanco porque aun sigo utilizando la rama principal que es la master.
+
+para empezar a trabajar en la rama nueva coloco el siguiente comando:
+10:git checkout rama_nueva
+hago los cambios que necesito, pruebo, etc. 
+ahora si quisiera volver a la rama principal para hacerlo hago el mismo comando anterio:
+git checkout master y me va a llevar a la rama principal.
+
+para borrar una rama tambien hay que tener en cuenta que no podemos estar sobre esa ni ninguna otra rama que no sea la principal.
+para borrar una rama coloco el siquiente comando:
+git branch -D y el nombre de la rama 
+ej: 
+git branch -D rama-borrar
+
+git checkout: listar commits
+nos podemos mover entre commits
+para hacerlo primero hacemos un 
+git log --onelineluego copiamos el commit que queremos utilizar, 
+luego le damos el comando
+ej: git checkout 2c8571c  (los numeros esos son el commit que yo elegi)
+
+GIT MERGE:
+esto sirve para fucionar todos los cambios que realizamos en las ramas
+ y volcarlas a la rama principal.
+ comango para el merge:
+ git merge rama_nueva (nombre de la rama que voy a utilizar)
+
+
+ GITHUB 
+ para subir un archivo que ya lo empece con git pero aun no lo he subido a la nube, tengo que copiar el enlace que me aparece en la pagina de github y copiarlo en mi terminal del vsc.
+ luego tengo que presionar el comando git push -u origin master
+
+ ahora, yo modifico algo en mis index o css, hago todo el proceso de git, 
+ pero luego de hacerlo para poder subirlo a github solo tengo que precionar:
+ git push 
+ y listo se actualizo en el navegador.
