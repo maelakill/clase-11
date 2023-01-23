@@ -9,11 +9,16 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--el ancho del sitio sea lo mas igual posible a la pantalla del dispositivo que use, ej: tablet, celular, tv, compus-->
 
-    <title>clase 4 </title> <!--sirve para que se vea en la solapa del sitio-->
+    <title>clase 11 </title> <!--sirve para que se vea en la solapa del sitio-->
 
     <link rel="shortcut icon" href="img /nela.jpg" type="image/x-icon"><!--sirve para colocar la foto del logo en donde normalmente vemos el mundo en la pestaña al lado del nombre del sitio-->
+            <!-- ARCHIVO CSS DE BOOTSTRAP forma 1 de linkearlo-->
+   <!-- <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">-->
 
+<!--forma 2 de linkear el bootstrap-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
+             <!--MI PROPIO CSS-->
     <link rel="stylesheet" href="css/styles.css"><!--este link es para incorporar css a mi proyecto, debe estar en el head -->
 
     
@@ -55,7 +60,9 @@
 </header>
 <!--practicando box modeling-->
 <section id="productos2">
-    <h1 class="titulo-git">soy un titulo creado en rama nuevas</h1>
+    <!--incorporando bootstrap a mi proyecto
+    ej: en esta h1 le agregue la palabra lead y el resultado fue letras mas lijeras, no tan negritas-->
+    <h1 class="titulo-git lead">soy un titulo creado en rama nuevas</h1>
     <h2>soy un titulo creado para el merge</h2>
     <!--card 1-->
 <div class="card">
@@ -200,6 +207,10 @@
 
 <footer id="footer">todos los derechos estan reservados</footer> <!--pie de pagina,todo lo que queramos al final lo colocamos aqui-->
 
+<!--JAVASCRIPT DE BOOTSTRAP SIEMPRE SE COLOCA ANTES DEL CIERRE DEL BODY forma 1 de linkearlo-->
+<!--<script src="bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>-->
 
+<!--forma 2 de linkear javascript de bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
