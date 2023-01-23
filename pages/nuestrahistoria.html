@@ -20,32 +20,47 @@
     <!--cuando encierro una imagen, especialmente un logo dentro de un enlace, es porque normalmente el logo siempre nos lleva al sitio de inicio.-->
     <!--en la referencia siempre le conoco el index para que cada vez que se haga clic en el logo me lleve al incio de la pagina-->
         
-        <nav><!--menu de navegacion, puede tener textos, titulos-->
-            <ul class="menu-nav">
-                <li>
-                    <a href="../index.html">inicio</a>
-                    </li>
-                <li>
-                    <a href="nuestrahistoria.html">nuestra historia</a>
-                    </li>
-                <li>
-                    <a href="fotos.html">fotos</a>
-                    </li>
-                <li>
-                     <a href="ubicacion.html">ubicacion</a>
-    
-                </li>
-                <li>
-                    <a href="contacto.html">contactos</a></li>
-                    <li>
-                        <a href="areas.html">areas</a></li>
-                    <li>
-                        <a href="#footer">ir al footer</footer></a>
-                    </li>
-                    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Bombonela</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">nuestra historia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">fotos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">ubicacion</a>
+              </li>
             </ul>
-        </nav>
+          </div>
+        </div>
+      </nav>
     </header>
+<!--para que este ejemplo de container, row, col-12 etc funcione, SIEMPRE tiene que haber un contenedor row! -->
+    <section class="container mt-5"><!--este mt-5 funciona para dar margin top, va del 0 al 5
+    paramargin botton es mb-, para margin letf es ms-, y para margin right es me-, -->
+        <div class="row">
+            <p class="col-12 col-md-6 col-lg-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam doloribus numquam, deserunt itaque libero debitis qui. Laborum exercitationem sit iure ducimus hic voluptas aut, odio mollitia harum culpa. Mollitia, hic.
+            
+            </p>
+    
+            <p class="col-12 col-md-6 col-lg-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quasi sed odit cum culpa, illo nemo ipsa accusamus sint animi doloremque autem libero nesciunt cupiditate eos voluptates quas recusandae non!</p>
+            <p class="col-12 col-md-6 col-lg-3">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem iusto neque doloremque necessitatibus earum debitis molestiae ex beatae ab? Quidem cumque nemo quod explicabo ullam repellendus odit necessitatibus illo debitis.
+            </p>
+            <p class="col-12 col-md-6 col-lg-3"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis quam cum nostrum fugiat officia harum impedit, reiciendis earum similique odit neque ipsum unde, error velit rem quasi, iure fugit totam?</p>
+        </div>
+        
+    </section>
     <section class=" wow animate__animated animate__backInleft">
         <h1>Animaciones y transformaciones</h1>
 
@@ -70,6 +85,27 @@
     <section>
         <div class="keyframes"> </div>
     </section>
+    <div id="carouselExample" class="carousel slide mx-auto"><!--la clase mx-auto en bootstrap sirve para centrar -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../img /DJI_0776.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../img /WhatsApp Image 2020-10-09 at 21.10.30.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../img /DSC05301.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
     <!--la forma correcta de incorporart java script es colocandolo antes del cierre del body-->
     <script src="js/wow.min.js"></script>

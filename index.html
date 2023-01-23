@@ -23,7 +23,7 @@
 
     
 </head>
-<body class="gradiente-lineal"> <!--todo lo que esta dentro del body es lo que se va a ver en la web-->
+<body class="gradiente-lineal container"> <!--todo lo que esta dentro del body es lo que se va a ver en la web-->
     <p>Bienvenidos a <span>Bombonela</span> </p> <!--ejemplo de etiqueta cerrada-->
 <header id="ir al inicio"><!--es la cabezara del sitio web-->
     <!--estructura de un menu de navegacion-->
@@ -59,11 +59,13 @@
     </nav>
 </header>
 <!--practicando box modeling-->
-<section id="productos2">
+<section id="productos2" class="container-fluid">
     <!--incorporando bootstrap a mi proyecto
     ej: en esta h1 le agregue la palabra lead y el resultado fue letras mas lijeras, no tan negritas-->
     <h1 class="titulo-git lead">soy un titulo creado en rama nuevas</h1>
     <h2>soy un titulo creado para el merge</h2>
+
+    <div class=" padre-cards">
     <!--card 1-->
 <div class="card">
 <img class="card__imagen" src="img /DJI_0776.jpg" alt="el sosneado">
@@ -135,6 +137,7 @@
                     
                     
                     </div>
+                </div>
                     
 
 </section><!--dentro del section puedo tener parrafos, div, cualquier tipo de etiqueta, es parecido al div pero para mayor volumen -->
@@ -205,7 +208,11 @@
 
 
 
-<footer id="footer">todos los derechos estan reservados</footer> <!--pie de pagina,todo lo que queramos al final lo colocamos aqui-->
+<footer id="footer">
+    <!--el codigo container y container-fluid pertenecientes a bootstrap lo que hacen es contener mucho mejor a nuestros archivos
+    -->
+    <p class="container-fluid">todos los derechos estan reservados</p>
+</footer> <!--pie de pagina,todo lo que queramos al final lo colocamos aqui-->
 
 <!--JAVASCRIPT DE BOOTSTRAP SIEMPRE SE COLOCA ANTES DEL CIERRE DEL BODY forma 1 de linkearlo-->
 <!--<script src="bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>-->

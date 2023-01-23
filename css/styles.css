@@ -3,10 +3,10 @@
 
 /* reseteo css* sirve para decirle a los navegadores que tienen que aplicar solo los margenes que yo le doy,
  no sus propios margenes. esto lo aplica a todo el archivo html*/
-/** {
+ {
     margin: 0;
     padding: 0;
-}*/
+}
 
 .css {
     /*propiedadesdecorativas*/
@@ -61,6 +61,9 @@ img{
 display: block;
 margin: 0 auto;
 }
+body{
+    margin-top: 7rem;
+}
 nav{
     margin-top: 1rem;
 }
@@ -108,7 +111,7 @@ gap: 1rem;/*esto sirve para separar los items entre si, sin pisar lo que ya hici
     margin-right: 1rem;
 }*/
 /*ejemplos de flex-direction wrap,flex-flow */
-/* codido del Id productos*/
+/* codido del Id productos2*/
 #productos2{
     margin-top: 12px;
     display: flex; /*lo uso para alinear items*/
@@ -130,7 +133,7 @@ justify-content:flex-start;
 justify-content: space-between;/*este se puede usar tanto vertical como horizontalmente, todo depende de que es lo que queremos modificar*/
 
 }
-/*codigo del id:productos*/
+/*codigo del id:productos2*/
 .card{
     background-color: bisque;
     /*padding por lados*/
@@ -657,4 +660,19 @@ h1{
     font-size:2rem ;
     color: white;
 }
+/*bootstrap*/
+.padre-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media(min-width: 768px)
+.padre-cards{
+    flex-direction: row;  
+    flex-wrap:wrap;
+}
 
+
+#carouselExample{
+    width: 400px;
+}
